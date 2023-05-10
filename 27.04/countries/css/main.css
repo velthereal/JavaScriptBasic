@@ -1,0 +1,31 @@
+body {
+	text-align: center;
+}
+
+div {
+	margin: 0 auto;
+	background-color: antiquewhite;
+	width: 400px;
+	height: 600px;
+	border-top: 8px solid black;
+	border-left: 8px solid black;
+	border-bottom: 8px solid gray;
+	border-right: 8px solid gray;
+	border-radius: 10px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+h1 {
+	color: green;
+	font-style: italic;
+}
+h2 {
+	color: blue;
+	font-style: italic;
+	margin: 0;
+}
+p {
+	color: aqua;
+	font-size: 24px;
+	margin: 15px;
+}
