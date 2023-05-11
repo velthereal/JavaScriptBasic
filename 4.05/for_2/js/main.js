@@ -74,43 +74,13 @@
 // document.write(`Кількість парних чисел : ${evenCounter} <br>`);
 // document.write(`Кількість непарних чисел : ${oddCounter} `);
 
-// 6  запитати як зробити бо не виходить !!!!!!!!!!!!!!!!!!!!!!!!
-// let num_1 = +prompt('Enter number');
-// let operator = prompt('Enter operator');
-// let num_2 = +prompt('Enter number');
+// 6
 // let res;
-// let continueCalc = true;
-// while(continueCalc){
-// 	switch (operator) {
-// 		case '+':
-// 			res = num_1 + num_2;
-// 			break;
-// 		case '-':
-// 			res = num_1 - num_2;
-// 			break;
-// 		case '*':
-// 			res = num_1 * num_2;
-// 			break;
-// 		case '/':
-// 			res = num_1 / num_2;
-// 			break;
-// 		default:
-// 			res = 'Error';
-// 			continue;
-// 	}
-// 	alert(`Result: ${res}`);
-// 	let continueInput = prompt('Do you want to do another one? (y or n)');
-// 	if (continueInput != 'y') {
-// 		continueCalc = false;
-// 	}
-// }
-// alert('Thanks for using calculator');
-
-// do {
+// let contCalc = true;
+// while(contCalc){
 // 	let num_1 = +prompt('Enter number');
 // 	let operator = prompt('Enter operator');
 // 	let num_2 = +prompt('Enter number');
-// 	let res;
 // 	switch (operator) {
 // 		case '+':
 // 			res = num_1 + num_2;
@@ -125,15 +95,13 @@
 // 			res = num_1 / num_2;
 // 			break;
 // 		default:
-// 			res = 'Error';
-// 			continue;
+// 			alert('Error');
+// 			break;
 // 	}
 // 	alert(`Result: ${res}`);
-// 	let q = confirm('Do you want to do another one?');
-// } while (!q);
+// 	contCalc = confirm('Do you want to do another one?');
+// }
 // alert('Thanks for using calculator');
-
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 // 7
 // let step = 0;
@@ -155,10 +123,41 @@
 // console.log(number);
 
 // 8
+// let dayNumber = 0;
+// while (true) {
+// 	let dayName;
+// 	switch (dayNumber) {
+//    case 0:
+//    	dayName = "Неділя";
+//    	break;
+//    case 1:
+//    	dayName = "Понеділок";
+//       break;
+//    case 2:
+//       dayName = "Вівторок";
+//       break;
+//    case 3:
+//       dayName = "Середа";
+//       break;
+//    case 4:
+//       dayName = "Четвер";
+//       break;
+//    case 5:
+//       dayName = "П'ятниця";
+//       break;
+//    case 6:
+//       dayName = "Субота";
+//       break;
+// 	}
+// 	let q = confirm(`День тижня: ${dayName}. Бажаєте побачити назву наступного дня тижня?`);
+// 	if (!q) {
+//     break;
+// 	}
+// 	dayNumber = (dayNumber + 1) % 7;
+// }
 
 // 9
 // document.write('<table>')
-
 // for(let q = 0; q < 8; q+=4){
 // 	document.write('<tr>')
 // 	for(let j = 2; j < 6; j++){
@@ -173,34 +172,34 @@
 // document.write('</table>')
 
 // 10
-// alert('Guess the number (0 - 100)');
-// let counter = 0;
-// let end = 100;
-// let number = end / 2;
-// let step = number;
-// while(true){
-// 	let answer = prompt(`Your number \n> ${number}; \n< ${number}; \n= ${number};`);
-// 	if(answer == '='){
-// 		alert(`Your number ${number}`);
-// 		break;
-// 	}
-// 	if(counter > 5){
-// 		alert('Error!!!!! You missed your number');
-// 		break;
-// 	}
-// 	step = parseInt(step / 2);
-// 	if(answer == '<'){
-// 		number -= step;
-// 		if(step == 0){
-// 			number--;
-// 			counter++;
-// 		}
-// 	} else {
-// 		start = number;
-// 		number += step;
-// 		if(step == 0){
-// 			number++;
-// 			counter++;
-// 		}
-// 	}
-// }
+alert('Guess the number (0 - 100)');
+let counter = 0;
+let end = 100;
+let number = end / 2;
+let step = number;
+while(true){
+	let answer = prompt(`Your number \n> ${number}; \n< ${number}; \n= ${number};`);
+	if(answer == '='){
+		alert(`Your number ${number}`);
+		break;
+	}
+	if(counter > 5){
+		alert('Error!!!!! You missed your number');
+		break;
+	}
+	step = parseInt(step / 2);
+	if(answer == '<'){
+		number -= step;
+		if(step == 0){
+			number--;
+			counter++;
+		}
+	} else {
+		start = number;
+		number += step;
+		if(step == 0){
+			number++;
+			counter++;
+		}
+	}
+}
