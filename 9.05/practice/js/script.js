@@ -58,107 +58,126 @@
 // console.log(`Загальна виплата по всім співробітникам за квартал: ${totalPayment}`);
 
 // 5
-let month = +prompt('Enter number of month');
-let start = +prompt('Enter strat day');
+// let month = +prompt('Enter number of month');
+// let start = +prompt('Enter strat day');
 
-switch (month) {
-case 1:
-case 3:
-case 5:
-case 7:
-case 8:
-case 10:
-case 12:
-	month = 31;
-	break;
-case 4:
-case 6:
-case 9:
-case 11:
-	month = 30;
-	break;
-case 2:
-	let year = +prompt('Enter current year');
-	month = year % 4 == 0 && year % 100 != 0 || year % 400 == 0 ? 29 : 28;
-	break;
-}
+// switch (month) {
+// case 1:
+// case 3:
+// case 5:
+// case 7:
+// case 8:
+// case 10:
+// case 12:
+// 	month = 31;
+// 	break;
+// case 4:
+// case 6:
+// case 9:
+// case 11:
+// 	month = 30;
+// 	break;
+// case 2:
+// 	let year = +prompt('Enter current year');
+// 	month = year % 4 == 0 && year % 100 != 0 || year % 400 == 0 ? 29 : 28;
+// 	break;
+// }
 
-let day = 0;
-let counter = 0;
-let weekend = 0;
-let monthName; // не спарцьовує назва місяця
-switch(month){
-	case 1:
-		monthName = 'January';
-		break;
-	case 2:
-		monthName = 'February';
-		break;
-	case 3:
-		monthName = 'March';
-		break;
-	case 4:
-		monthName = 'April';
-		break;
-	case 5:
-		monthName = 'May';
-		break;
-	case 6:
-		monthName = 'June';
-		break;
-	case 7:
-		monthName = 'July';
-		break;
-	case 8:
-		monthName = 'August';
-		break;
-	case 9:
-		monthName = 'September';
-		break;
-	case 10:
-		monthName = 'October';
-		break;
-	case 11:
-		monthName = 'November';
-		break;
-	case 12:
-		monthName = 'December';
-		break;
-}
-document.write(`<div>`)
-document.write('<table>')
-document.write(`<tr><th colspan="7">${monthName}</th></tr>`)
-document.write('<tr><td>Mo</td><td>Tu</td><td>We</td><td>Th</td><td>Fr</td><td>Sa</td><td>Su</td></tr>')
+// let day = 0;
+// let counter = 0;
+// let weekend = 0;
+// let monthName; // не спарцьовує назва місяця
+// switch(month){
+// 	case 1:
+// 		monthName = 'January';
+// 		break;
+// 	case 2:
+// 		monthName = 'February';
+// 		break;
+// 	case 3:
+// 		monthName = 'March';
+// 		break;
+// 	case 4:
+// 		monthName = 'April';
+// 		break;
+// 	case 5:
+// 		monthName = 'May';
+// 		break;
+// 	case 6:
+// 		monthName = 'June';
+// 		break;
+// 	case 7:
+// 		monthName = 'July';
+// 		break;
+// 	case 8:
+// 		monthName = 'August';
+// 		break;
+// 	case 9:
+// 		monthName = 'September';
+// 		break;
+// 	case 10:
+// 		monthName = 'October';
+// 		break;
+// 	case 11:
+// 		monthName = 'November';
+// 		break;
+// 	case 12:
+// 		monthName = 'December';
+// 		break;
+// }
+// console.log(monthName);
+// document.write(`<div>`)
+// document.write('<table>')
+// document.write(`<tr><th colspan="7">${monthName}</th></tr>`)
+// document.write('<tr><td>Mo</td><td>Tu</td><td>We</td><td>Th</td><td>Fr</td><td>Sa</td><td>Su</td></tr>')
 
-for(let i = 0; i < month; i++){
-	if(counter % 7 == 0){
+// for(let i = 0; i < month; i++){
+// 	if(counter % 7 == 0){
+// 		document.write(`<tr>`)
+// 	}
+// 	if(i == 0){
+// 		for(let j = 0; j < start - 1; j++){
+// 			document.write(`<td></td>`)
+// 			counter++;
+// 		}
+// 	}
+// 	day++;
+// 	document.write(`<td>${day < 10 ? "0" : ""}${day}</td>`);
+// 	counter++;
+// 	if(counter % 7 == 0){
+// 		weekend++;
+// 		if(day > 1){
+// 			weekend++;
+// 		}
+// 	}
+// 	if(day == month){
+// 		while(counter % 7 != 0){
+// 			document.write(`<td></td>`)
+// 			counter++;
+// 		}
+// 	}
+// 	if(counter % 7 == 0){
+// 		document.write(`</tr>`)
+// 	}
+// }
+// document.write('</table>');
+// document.write(`<p>Number of weekend in month: ${weekend}</p>`)
+// document.write(`</div>`);
+
+// 6
+let size = prompt('Enter size');
+if(size <= 0 && size % 2 == 0) {
+	alert('Error');
+} else {
+	document.write(`<table>`)
+	for(let i = 1; i <= size; i++){
 		document.write(`<tr>`)
-	}
-	if(i == 0){
-		for(let j = 0; j < start - 1; j++){
-			document.write(`<td></td>`)
-			counter++;
+		for(let j = 1; j <= size; j++){
+			document.write(`<td>`)
+			document.write(`*`)
+			document.write(`</td>`)
 		}
-	}
-	day++;
-	document.write(`<td>${day < 10 ? "0" : ""}${day}</td>`);
-	counter++;
-	if(counter % 7 == 0){
-		weekend++;
-		if(day > 1){
-			weekend++;
-		}
-	}
-	if(day == month){
-		while(counter % 7 != 0){
-			document.write(`<td></td>`)
-			counter++;
-		}
-	}
-	if(counter % 7 == 0){
 		document.write(`</tr>`)
 	}
+	document.write(`</table>`)
 }
-document.write('</table>');
-document.write(`<p>Number of weekend in month: ${weekend}</p>`)
-document.write(`</div>`);
