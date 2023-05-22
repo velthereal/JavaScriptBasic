@@ -82,9 +82,52 @@
 // console.log(string(something));
 
 // 7 Напишіть функцію, яка підраховує кількість слів у реченні
+// function wordsCounter(sentence){
+// 	let words = sentence.split(' ');
+// 	return words.length;
+// }
+// let sentence = 'I love my mother and father';
+// console.log(wordsCounter(sentence));
 
 // 8 Напишіть функцію, яка повертає найдовше слово з речення
+// function words(sentence){
+// 	let wordsInSentence = sentence.split(' ');
+// 	let max = wordsInSentence[0];
+// 	for(let i = 0; i < wordsInSentence.length; i++){
+// 		if(max.length < wordsInSentence[i].length){
+// 			max = wordsInSentence[i];
+// 		}
+// 	}
+// 	return max;
+// }
+// let sentence = 'I love my alaminute and dhdslkkjsfkzk';
+// console.log(words(sentence));
 
 // 9 Напишіть функцію, яка підраховує середню довжину слова у реченні
+// function words(sentence){
+// 	let wordsInSentence = sentence.split(' ');
+// 	let totalLength = 0;
+// 	for(let i = 0; i < wordsInSentence.length; i++){
+// 		totalLength += wordsInSentence[i].length;
+// 	}
+// 	return totalLength / wordsInSentence.length;
+// }
+// let sentence = 'I love my minute';
+// console.log(words(sentence));
 
 // 10 Напишіть функцію, яка приймає рядок і символ і виводить індекси, за якими знаходиться цей символ у рядку. Також виведіть, скільки разів зустрічається цей символ у рядку
+// function string(str, char){
+// 	let indexes = [];
+// 	let counter = 0;
+// 	let index = str.indexOf(char);
+// 	while(index != -1){
+// 		indexes.push(index);
+// 		counter++;
+// 		index = str.indexOf(char, index + 1);
+// 	}
+// 	console.log("Індекси, за якими знаходиться символ", char, "у рядку:", indexes);
+//   	console.log("Кількість зустрічей символу", char, "у рядку:", counter);
+// }
+// let smth = 'frontent development';
+// let symbol = 'o';
+// console.log(string(smth, symbol));
