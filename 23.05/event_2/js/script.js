@@ -4,10 +4,49 @@ let btn3 = document.querySelector('button:nth-of-type(3)');
 let btn4 = document.querySelector('button:last-of-type');
 let parag = document.querySelector('p');
 btn1.addEventListener('click', () => {
-    parag.style.backgroundColor = 'rgb(195, 235, 222)';
-    parag.style.padding = '10px';
-    parag.style.border = 'solid 2px lightblue';
-    parag.style.fontSize = '20px';
-    parag.style.fontStyle = 'italic';
-    parag.style.fontWeigth = '700';
-})
+   parag.style.backgroundColor = 'rgb(195, 235, 222)';
+   parag.style.padding = '15px';
+   parag.style.border = 'double 4px blue';
+   parag.style.fontSize = '24px';
+   parag.style.fontStyle = 'italic';
+   parag.style.fontWeight = '600';
+	parag.style.width = '500px';
+	parag.style.borderRadius = '5px';
+	parag.style.color = '#000';
+});
+btn2.addEventListener('click', () => {
+   parag.style.backgroundColor = '#ffe4e1';
+   parag.style.padding = '25px';
+   parag.style.border = 'dashed 15px #493b93';
+   parag.style.fontSize = '18px';
+   parag.style.fontStyle = 'italic';
+   parag.style.fontWeight = '600';
+	parag.style.width = '700px';
+	parag.style.borderRadius = '5px';
+	parag.style.color = '#493b93';
+});
+btn3.addEventListener('click', () => {
+   parag.style.backgroundColor = '#d3d3d3';
+   parag.style.padding = '25px';
+   parag.style.border = 'dashed 20px #696969';
+   parag.style.fontSize = '18px';
+   parag.style.fontStyle = 'italic';
+   parag.style.fontWeight = '600';
+	parag.style.width = '550px';
+	parag.style.borderRadius = '5px 50px 50px 5px';
+	parag.style.color = '#255951';
+});
+btn4.addEventListener('click', () => {
+   parag.style.backgroundColor = '#483d8b';
+   parag.style.padding = '25px';
+   parag.style.borderTop = 'solid 20px #1b196d';
+	parag.style.borderLeft = 'solid 20px #1b196d';
+	parag.style.borderRight = 'solid 20px #02021c';
+	parag.style.borderBottom = 'solid 20px #02021c';
+	parag.style.fontSize = '18px';
+   parag.style.fontStyle = 'italic';
+   parag.style.fontWeight = '600';
+	parag.style.width = '400px';
+	parag.style.borderRadius = '50px 5px 50px 5px';
+	parag.style.color = '#46aae8';
+});
