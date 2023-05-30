@@ -5,7 +5,7 @@
 // console.log(allBtn);
 // console.log(list);
 
-// let btn = document.querySelector('hashtagbtnId');
+// let btn = document.querySelector('#btnId');
 // console.log(btn);
 // let allBtn = document.querySelector('.btnClass');
 // console.log(allBtn);
