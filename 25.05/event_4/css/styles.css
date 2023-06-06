@@ -1,10 +1,19 @@
 /* task 1 */
-/* div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-} */
+div {
+	background-color: #fbf2e9;
+	margin: 0 auto;
+	width: 300px;
+	/* height: 300px; */
+	text-align: center;
+	font-size: 30px;
+	padding: 20px;
+	box-sizing: border-box;
+	font-weight: bold;
+}
+button {
+	padding: 10px;
+	font-size: 16px;
+}
 
 /* task 3 */
 /* .hideAndShow {
