@@ -1,0 +1,55 @@
+body {
+    background-color: #fbf2e9;
+}
+/* Task 1 */
+/* .main {
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    width: 100px;
+    height: 70px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main div {
+    display: flex;
+    flex-direction: column;
+}
+p {
+    margin-left: 20px;
+    font-size: 40px;
+}
+button {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    text-align: center;
+}
+.arrow {
+    font-size: 30px;
+} */
+
+/* Task 6 */
+.calculate {
+    width: 250px;
+    margin: 50px auto;
+    padding: 10px;
+    background-color: bisque;
+}
+.calculate p {
+    padding: 5px;
+    font-size: 24px;
+    background-color: #fff;
+    text-align: right;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.calculate .board {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(50px,auto);
+}
+.calculate .board .res {
+    grid-column: span 2;
+}
