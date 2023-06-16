@@ -1,0 +1,78 @@
+body {
+	background-color: #fbf2e9;
+	font-family: sans-serif;
+}
+.colors {
+  box-sizing: border-box;
+  width: 250px;
+  height: 60px;
+  border: solid 1px #ccc;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  grid-template-columns: repeat(9,1fr);
+  grid-row-gap: 3px;
+}
+.colors div {
+  width: 25px;
+  height: 25px;
+  border: solid 1px #ccc;
+  cursor: pointer;
+}
+p {
+  font-family: sans-serif;
+}
+div[data-color="black"] {
+  background-color: black;
+}
+div[data-color="#8a8a8a"] {
+  background-color: #8a8a8a;
+}
+div[data-color="#92001c"] {
+  background-color: #92001c;
+}
+div[data-color="red"] {
+  background-color: red;
+}
+div[data-color="yellow"] {
+  background-color: yellow;
+}
+div[data-color="green"] {
+  background-color: green;
+}
+div[data-color="#00aaea"] {
+  background-color: #00aaea;
+}
+div[data-color="#4a53d1"] {
+  background-color: #4a53d1;
+}
+div[data-color="#ab54ac"] {
+  background-color: #ab54ac;
+}
+div[data-color="#fff"] {
+  background-color: #fff;
+}
+div[data-color="#d7d7d7"] {
+  background-color: #d7d7d7;
+}
+div[data-color="#c08462"] {
+  background-color: #c08462;
+}
+div[data-color="#ffc6d0"] {
+  background-color: #ffc6d0;
+}
+div[data-color="#f1e7b7"] {
+  background-color: #f1e7b7;
+}
+div[data-color="#bce925"] {
+  background-color: #bce925;
+}
+div[data-color="#a2ddec"] {
+  background-color: #a2ddec;
+}
+div[data-color="#7b9bc4"] {
+  background-color: #7b9bc4;
+}
+div[data-color="#cdc5ea"] {
+  background-color: #cdc5ea;
+}

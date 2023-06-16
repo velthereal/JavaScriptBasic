@@ -1,0 +1,23 @@
+body {
+	background-color: #fbf2e9;
+	font-family: sans-serif;
+}
+section {
+	width: 500px;
+	margin: 0 auto;
+	min-height: 25px;
+	position: relative;
+}
+button {
+	width: 90%;
+	cursor: pointer;
+	display: block;
+	margin: 0 auto;
+}
+.block {
+	width: 60px;
+	height: 40px;
+	cursor: pointer;
+	margin: 5px;
+	display: inline-block;
+}

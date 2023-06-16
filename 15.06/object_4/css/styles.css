@@ -1,0 +1,30 @@
+.time {
+    margin: 0 auto;
+    width: 60%;
+    height: 150px;
+    border: solid 2px #ccc;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+div {
+    width: 20%;
+}
+div p {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    background-color: #ccc;
+    margin: 0;
+    margin-top: -5px;
+}
+span {
+    display: inline-block;
+    width: 100%;
+    height: 45px;
+    background-color: #44aafe;
+    color: #fff;
+}

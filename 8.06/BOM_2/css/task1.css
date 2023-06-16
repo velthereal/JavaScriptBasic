@@ -1,0 +1,44 @@
+body {
+	background-color: #fbf2e9;
+	font-family: sans-serif;
+}
+.main {
+	margin: 30px auto;
+	border: solid 2px #ccc;
+	border-radius: 5px;
+	width: 85px;
+	height: 40px;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main div {
+	display: flex;
+	flex-direction: column;
+	border-left: solid 2px #ccc;
+}
+
+p {
+	font-size: 30px;
+	font-family: sans-serif;
+	margin: 10px;
+}
+
+button {
+	width: 20px;
+	height: 20px;
+	padding: 0;
+	text-align: center;
+	border: none;
+	background-color: transparent;
+}
+button:first-of-type{
+	border-bottom: #ccc solid 2px;
+}
+
+.arrow {
+	font-size: 15px;
+	font-weight: bold;
+}
