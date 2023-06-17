@@ -1,0 +1,22 @@
+body {
+	background-color: #fbf2e9;
+	font-family: sans-serif;
+}
+div {
+	margin: 0 auto;
+	width: 140px;
+	background-color: #2f99ff;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	height: 40px;
+	color: #fff;
+	font-weight: bold;
+	padding: 10px;
+	font-size: 20px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+span {
+	margin: 0 8px;
+}
