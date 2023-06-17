@@ -67,7 +67,7 @@
 // 	return divNum1 + '/' + divNum2;
 // }
 // console.log(div(fract1, fract2));
-// 2.5 Функція скорочення об’єкта-дробу (НЕ ЗНАЮ ЯК)
+// 2.5 Функція скорочення об’єкта-дробу
 // function reduction(fract){
 // 	let nsd = findNSD(fract.numerator, fract.denominator);
 // 	let simpleNum = fract.numerator / nsd;
