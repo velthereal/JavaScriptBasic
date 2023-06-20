@@ -1,0 +1,46 @@
+body {
+	font-family: sans-serif;
+	background-color: #fbf2e9;
+}
+.login-form {
+	margin: 0 auto;
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	align-items: center;
+	padding: 20px 25px;
+}
+label {
+	align-self: flex-start;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+.login-form>input {
+	width: 250px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	height: 30px;
+}
+button {
+	width: 250px;
+	margin: 15px 0;
+	height: 30px;
+}
+.remember {
+	width: 250px;
+}
+.remember input {
+	margin: 0;
+	width: 20px;
+}
+a {
+	align-self: flex-end;
+	font-size: 14px;
+}
+
+.empty-input {
+	border: solid 1px red;
+	border-radius: 3px;
+	box-shadow: inset 1px 1px 5px red, inset -1px -1px 5px red;
+}

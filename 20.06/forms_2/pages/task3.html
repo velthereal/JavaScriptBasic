@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task 3</title>
+
+	<link rel="stylesheet" href="../css/task3.css">
+</head>
+<body>
+	<form action="" name="form" method="get" class="info-form">
+		<div>
+			<label for="">Firstname:</label>
+			<br>
+			<input type="text" name="firstname">
+		</div>
+		<div>
+			<label for="">Lastname:</label>
+			<br>
+			<input type="text" name="lastname">
+		</div>
+		<div>
+			<label for="">Birthday:</label>
+			<br>
+			<input type="date" name="birthday">
+		</div>
+		<div class="gender">
+			<label for="">Gender:</label>
+			<input type="radio" name="male">
+			<label for="">Male</label>
+			<input type="radio" name="male">
+			<label for="">Female</label>
+		</div>
+		<div>
+			<label for="">Country:</label>
+			<br>
+			<select name="country">
+				<option value="Ukarine">Ukraine</option>
+			</select>
+		</div>
+		<div>
+			<label for="">City:</label>
+			<br>
+			<select name="city">
+				<option value="Rivne">Rivne</option>
+			</select>
+		</div>
+		<div class="skills">
+			<label for="">Skills:</label>
+			<input type="checkbox" name="skills">
+			<label for="">HTML</label>
+			<input type="checkbox" name="skills">
+			<label for="">CSS</label>
+			<input type="checkbox" name="skills">
+			<label for="">JS</label>
+			<input type="checkbox" name="skills">
+			<label for="">PHP</label>
+			<input type="checkbox" name="skills">
+			<label for="">C++</label>
+			<input type="checkbox" name="skills">
+			<label for="">JAVA</label>
+			<input type="checkbox" name="skills">
+			<label for="">C#</label>
+		</div>
+		<button>Save</button>
+	</form>
+
+	<div class="result result-none">
+		<h1>Result:</h1>
+		<table>
+			<tr>
+				<td>Firstname</td>
+				<td id="firstname"></td>
+			</tr>
+			<tr>
+				<td>Lastname</td>
+				<td id="lastname"></td>
+			</tr>
+			<tr>
+				<td>Birthday</td>
+				<td id="birthday"></td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td id="gender"></td>
+			</tr>
+			<tr>
+				<td>Country</td>
+				<td id="country"></td>
+			</tr>
+			<tr>
+				<td>City</td>
+				<td id="city"></td>
+			</tr>
+			<tr>
+				<td>Skills</td>
+				<td id="skills"></td>
+			</tr>
+		</table>
+	</div>
+	<script src="../js/task3.js"></script>
+</body>
+</html>

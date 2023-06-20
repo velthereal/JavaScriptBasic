@@ -1,0 +1,44 @@
+body {
+	font-family: sans-serif;
+	background-color: #fbf2e9;
+}
+.login-form {
+	margin: 30px auto;
+	width: 700px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+}
+.login-form div {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+}
+label {
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+input {
+	height: 30px;
+	margin-bottom: 15px;
+}
+button {
+	display: block;
+	width: 650px;
+	grid-column: span 2;
+	margin-top: 20px;
+	height: 30px;
+}
+p {
+	width: 650px;
+	grid-column: span 2;
+	color: red;
+	font-size: 20px;
+	text-align: center;
+}
+
+.wrong-password {
+	border: solid 1px red;
+	border-radius: 5px;
+	box-shadow: inset 1px 1px 5px red, inset -1px -1px 5px red;
+}

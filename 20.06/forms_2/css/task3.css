@@ -1,0 +1,71 @@
+body {
+	font-family: sans-serif;
+	background-color: #fbf2e9;
+}
+.info-form {
+	margin: 30px auto;
+	width: 650px;
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+}
+label {
+	display: inline-block;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+input, select {
+	margin-bottom: 15px;
+}
+div:first-of-type>input,
+div:nth-of-type(2)>input,
+div:nth-of-type(3)>input{
+	width: 300px;
+	height: 30px;
+	box-sizing: border-box;
+}
+select {
+	width: 300px;
+	height: 30px;
+}
+.gender {
+	align-self: center;
+}
+.gender>input {
+	margin: 0;
+}
+.skills {
+	grid-column: span 2;
+	width: 100%;
+}
+button {
+	grid-column: span 2;
+	height: 30px;
+	margin-top: 20px;
+}
+
+.result-none {
+	display: none;
+}
+
+.result {
+	margin: 0 auto;
+	width: 600px;
+}
+h1 {
+	font-size: 18px;
+}
+table {
+	border: 2px solid #ccc;
+	border-collapse: collapse;
+}
+td{
+	border: 2px solid #ccc;
+	width: 250px;
+	height: 40px;
+	padding-left: 50px;
+	font-size: 20px;
+}
+td:last-of-type{
+	width: 350px;
+	font-weight: bold;
+}

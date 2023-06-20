@@ -1,0 +1,51 @@
+body {
+	font-family: sans-serif;
+	background-color: #fbf2e9;
+}
+.color-form {
+	width: 313px;
+	margin: 30px auto;
+}
+.input-color{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid #ccc;
+	width: 315px;
+}
+label{
+	margin: 0 10px;
+}
+input {
+	width: 60px;
+	height: 25px;
+	border-radius: 0;
+	border: 1px solid #ccc;
+}
+button{
+	width: 315px;
+	height: 25px;
+	margin-top: 5px;
+}
+
+.blocks {
+	display: flex;
+}
+.result{
+	width: 270px;
+	height: 50px;
+	border: solid 1px #ccc;
+	display: flex;
+	align-items: center;
+	margin: 20px;
+}
+.color {
+	width: 50px;
+	height: 50px;
+}
+p {
+	margin: 0;
+	margin-left: 15px;
+	font-size: 20px;
+	width: 190px;
+}
