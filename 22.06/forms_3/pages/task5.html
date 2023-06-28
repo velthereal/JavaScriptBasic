@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task 5</title>
+
+	<link rel="stylesheet" href="../css/task5.css">
+</head>
+<body>
+	<div class="container">
+		<form action="" method="get">
+			<label for="">Group:</label>
+			<select name="group">
+				<option value="Group 1">Group 1</option>
+			</select>
+			<label for="">Lesson:</label>
+			<select name="lesson">
+				<option value="3">3</option>
+			</select>
+			<button name="select">Select</button>
+			<hr>
+			<div class="group none">
+				<label for="">Topic:</label>
+				<input type="text" name="topic">
+				<table>
+					<tr>
+						<td>Name</td>
+						<td>Is present</td>
+					</tr>
+					<tr>
+						<td>Student 1</td>
+						<td>
+							<input type="checkbox" name="present">
+						</td>
+					</tr>
+					<tr>
+						<td>Student 2</td>
+						<td>
+							<input type="checkbox" name="present">
+						</td>
+					</tr>
+					<tr>
+						<td>Student 3</td>
+						<td>
+							<input type="checkbox" name="present">
+						</td>
+					</tr>
+				</table>
+				<button name="save">Save</button>
+			</div>
+
+			<div class="group result none">
+				<label for="">Topic:</label>
+				<span></span>
+				<table>
+					<tr>
+						<td>Name</td>
+						<td>Is present</td>
+					</tr>
+					<tr>
+						<td>Student 1</td>
+						<td class="td"></td>
+					</tr>
+					<tr>
+						<td>Student 2</td>
+						<td class="td"></td>
+					</tr>
+					<tr>
+						<td>Student 3</td>
+						<td class="td"></td>
+					</tr>
+				</table>
+			</div>
+		</form>
+	</div>
+	<script src="../js/task5.js"></script>
+</body>
+</html>

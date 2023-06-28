@@ -1,0 +1,19 @@
+body {
+   background-color: #fbf2e9;
+   font-family: sans-serif;
+}
+span {
+	font-weight: bold;
+}
+button {
+	margin-top: 10px;
+	width: 150px;
+	height: 25px;
+}
+input {
+	margin-top: 5px;
+}
+
+.none{
+	display: none;
+}

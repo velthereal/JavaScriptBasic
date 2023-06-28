@@ -1,0 +1,82 @@
+.none {
+	display: none;
+}
+body {
+   background-color: #fbf2e9;
+   font-family: sans-serif;
+}
+form {
+	width: 750px;
+	margin: 0 auto;
+}
+form>label {
+	font-size: 18px;
+	margin-left: 10px;
+}
+form select, form>input {
+	width: 150px;
+	height: 30px;
+}
+form>input {
+	width: 150px;
+	height: 27px;
+}
+form>button {
+	width: 150px;
+	height: 31px;
+	margin-left: 15px;
+}
+
+hr {
+	margin: 30px 0;
+}
+
+.train {
+	display: grid;
+	grid-template-columns: repeat(7,1fr);
+	border: solid 2px #ccc;
+	border-radius: 10px;
+	padding: 20px;
+	grid-gap: 5px;
+}
+.train>div {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	border: solid 2px #ccc;
+	grid-gap: 2px;
+}
+.train>div>div {
+	border: solid 1px #ccc;
+}
+.seats p {
+	text-align: right;
+	font-size: 18px;
+}
+.seats p span {
+	font-weight: bold;
+}
+.seats p button {
+	width: 150px;
+	height: 30px;
+}
+
+.result {
+	width: 750px;
+	margin: 0 auto;
+}
+
+h2 {
+	font-size: 18px;
+}
+table {
+	width: 500px;
+	border: solid 1px #ccc;
+	border-collapse: collapse;
+}
+td, th {
+	height: 40px;
+	border: solid 1px #ccc;
+}
+td {
+	text-align: center;
+}

@@ -1,0 +1,28 @@
+body {
+   background-color: #fbf2e9;
+   font-family: sans-serif;
+}
+.none {
+	display: none;
+}
+label {
+	font-size: 18px;
+}
+textarea {
+	width: 450px;
+	height: 100px;
+	margin: 10px 0;
+}
+button {
+	height: 30px;
+	width: 455px;
+}
+h2 {
+	font-size: 18px;
+}
+article {
+	width: 500px;
+	padding: 20px;
+	border: solid 1px #ccc;
+	font-size: 20px;
+}

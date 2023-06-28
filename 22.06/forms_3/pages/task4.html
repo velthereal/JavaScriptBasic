@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Task 4</title>
+
+   <link rel="stylesheet" href="../css/task4.css">
+</head>
+<body>
+	<div class="container">
+		<section>
+			<article>
+				<figure>
+					  <img src="../images/book2.jpg" alt="">
+				</figure>
+				 <div>
+					  <div class="about">
+							<h3>Learning JavaScript: JavaScript Essentials for Modern Application Development</h3>
+							<h4>Ethan Brown</h4>
+					  </div>
+					  <div class="price">
+							<p>16$</p>
+							<button>Select</button>
+					  </div>
+				 </div>
+			</article>
+ 
+			<article>
+				 <figure>
+						<img src="../images/book1.jpg" alt="">
+				 </figure>
+				  <div>
+						<div class="about">
+							 <h3>You Don't Know JS: Scope & Closures</h3>
+							 <h4>Kyle Simpson</h4>
+						</div>
+						<div>
+							 <p>20$</p>
+							 <button>Select</button>
+						</div>
+				  </div>
+			 </article>
+ 
+			 <article>
+				 <figure>
+						<img src="../images/book3.jpg" alt="">
+				 </figure>
+				  <div>
+						<div class="about">
+							 <h3>JavaScript and jQuery: Interactive Front-End Web Development</h3>
+							 <h4>Jon Duckett</h4>
+						</div>
+						<div>
+							 <p>22$</p>
+							 <button>Select</button>
+						</div>
+				  </div>
+			 </article>
+	  </section>
+ 
+		<form action="" method="get">
+			<label for="">Book:</label>
+			<input name="bookName" type="text" disabled>
+			<label for="Quantity:"></label>
+			<input type="number" name="quantity">
+			<label for="">Name:</label>
+			<input type="text" name="nameUser">
+			<label for="">Delivery address:</label>
+			<textarea name="address"></textarea>
+			<label for="">Delivery date:</label>
+			<input type="date" name="date">
+			<label for="">Comment;</label>
+			<textarea name="comment"></textarea>
+			<button name="buy">Buy</button>
+		</form>
+	</div>
+
+	<div class="result none">
+		<h2>Result:</h2>
+		<article></article>
+	</div>
+   <script src="../js/task4.js"></script>
+</body>
+</html>
