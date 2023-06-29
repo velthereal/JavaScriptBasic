@@ -6,19 +6,28 @@ let tickets = document.querySelector('.result table');
 
 form.search.addEventListener('click', (e) => {
 	seatsDiv.classList.remove('none');
+	if(form.date.value == ''){
+		return;
+	}
 	form.direction.disabled = true;
 	form.date.disabled = true;
 	e.preventDefault();
 })
+let seats = form.seat;
+let price = 0;
+for(let i = 0; i < seats.length; i++){
+	seats[i].addEventListener('change',()=>{
+		if(seats[i].checked){
+			price += 62;
+			seatsPrice.textContent = price + '$';
+		}
+	})
+}
 form.book.addEventListener('click', (e) => {
-	let seats = form.seat;
-	let price = 0;
 	let numberOfSeat = [];
 	for(let i = 0; i < seats.length; i++){
 		if(seats[i].checked){
 			numberOfSeat.push(seats[i].nextElementSibling.textContent);
-			price += 62;
-			seatsPrice.textContent = price + '$';
 			let tr = document.createElement('tr');
 			let tdDirection = document.createElement('td');
 			let tdDate = document.createElement('td');
