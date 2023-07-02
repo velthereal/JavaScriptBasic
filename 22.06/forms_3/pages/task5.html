@@ -11,23 +11,23 @@
 	<div class="container">
 		<form action="" method="get">
 			<label for="">Group:</label>
-			<select name="group">
+			<select name="group" id="group">
 				<option value="Group 1">Group 1</option>
 				<option value="Group 2">Group 2</option>
 				<option value="Group 3">Group 3</option>
 			</select>
-			<label for="">Lesson:</label>
-			<select name="lesson">
+			<label for="lesson">Lesson:</label>
+			<select name="lesson" id="lesson">
 				<option value="3">1</option>
 				<option value="3">2</option>
 				<option value="3">3</option>
 			</select>
-			<button name="select">Select</button>
+			<button type="button" name="select">Select</button>
 			<hr>
 			<div class="group none">
 				<label for="">Topic:</label>
-				<input type="text" name="topic">
-				<table>
+				<input type="text" name="topic" id="topic">
+				<table id="studentsTable">
 					<tr>
 						<td>Name</td>
 						<td>Is present</td>
@@ -35,48 +35,35 @@
 					<tr>
 						<td>Student 1</td>
 						<td>
-							<input type="checkbox" name="present">
+							<input type="checkbox" name="present" class="presentCheckbox">
 						</td>
 					</tr>
 					<tr>
 						<td>Student 2</td>
 						<td>
-							<input type="checkbox" name="present">
+							<input type="checkbox" name="present" class="presentCheckbox">
 						</td>
 					</tr>
 					<tr>
 						<td>Student 3</td>
 						<td>
-							<input type="checkbox" name="present">
+							<input type="checkbox" name="present" class="presentCheckbox">
 						</td>
 					</tr>
 				</table>
-				<button name="save">Save</button>
-			</div>
-
-			<div class="group result none">
-				<label for="">Topic:</label>
-				<span></span>
-				<table>
-					<tr>
-						<td>Name</td>
-						<td>Is present</td>
-					</tr>
-					<tr>
-						<td>Student 1</td>
-						<td class="td"></td>
-					</tr>
-					<tr>
-						<td>Student 2</td>
-						<td class="td"></td>
-					</tr>
-					<tr>
-						<td>Student 3</td>
-						<td class="td"></td>
-					</tr>
-				</table>
+				<button type="button" name="save">Save</button>
 			</div>
 		</form>
+
+		<div id="attendanceList" class="none">
+			<p>Topic: <span></span></p>
+			<table id="attendanceTable">
+				<tr>
+					<td>Name</td>
+					<td>Is present</td>
+				</tr>
+			</table>
+		</div>
 	</div>
 	<script src="../js/task5.js"></script>
 </body>
