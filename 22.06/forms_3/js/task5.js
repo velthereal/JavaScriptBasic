@@ -4,6 +4,7 @@ let groupBlock = document.querySelector('.group');
 let attendanceList = document.querySelector('#attendanceList');
 let attendanceListTopic = document.querySelector('#attendanceList span');
 let attendanceTable = document.querySelector('#attendanceTable');
+let topicLabel = document.querySelector('.group label[for="topic"]');
 
 let attendanceData = {};
 
@@ -12,6 +13,7 @@ form.select.addEventListener('click', () => {
 	let lesson = form.lesson.value;
 	groupBlock.classList.remove('none');
 	attendanceList.classList.add('none');
+	topicLabel.textContent = 'Topic:';
 	form.topic.value = '';
 
 	form.present.forEach(function(checkbox){
@@ -31,12 +33,16 @@ form.select.addEventListener('click', () => {
 			let presentCell = document.createElement('td');
 
 			nameCell.textContent = studentsAttendance[i].name;
-			presentCell.textContent = studentsAttendance[i].present ? 'Present' : 'Absent';
+			presentCell.textContent = studentsAttendance[i].present ? 'present' : ' ';
 
 			row.insertAdjacentElement('beforeend', nameCell);
 			row.insertAdjacentElement('beforeend', presentCell);
 			attendanceTable.insertAdjacentElement('beforeend', row);
 		}
+	} else {
+		attendanceList.classList.add('none');
+   	groupBlock.classList.remove('none');
+   	attendanceTable.innerHTML = '';
 	}
 });
 
@@ -45,7 +51,6 @@ form.save.addEventListener('click', () => {
 	let lesson = form.lesson.value;
 	let topic = form.topic.value;
 
-	attendanceList.classList.remove('none');
 	groupBlock.classList.add('none');
 	attendanceListTopic.textContent = topic;
 
@@ -61,9 +66,30 @@ form.save.addEventListener('click', () => {
 	if(!attendanceData.hasOwnProperty(group)){
 		attendanceData[group] = {};
 	}
+	if (!attendanceData[group].hasOwnProperty(lesson)) {
+		attendanceData[group][lesson] = {};
+	}
 
 	attendanceData[group][lesson] = {
 		topic: topic,
 		students: studentsAttendance
+	}
+
+	if(form.lesson.value == lesson && form.group.value == group && !attendanceList.classList.contains('none')){
+		attendanceListTopic.textContent = topic;
+		attendanceTable.innerHTML = '<tr><td>Name</td><td>Is present</td></tr>';
+
+		for(let i = 0; i < studentsAttendance.length; i++){
+			let row = document.createElement('tr');
+			let nameCell = document.createElement('td');
+			let presentCell = document.createElement('td');
+
+			nameCell.textContent = studentsAttendance[i].name;
+			presentCell.textContent = studentsAttendance[i].present ? 'present' : ' ';
+
+			row.insertAdjacentElement('beforeend', nameCell);
+			row.insertAdjacentElement('beforeend', presentCell);
+			attendanceTable.insertAdjacentElement('beforeend', row);
+		}
 	}
 })
