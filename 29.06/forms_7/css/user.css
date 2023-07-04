@@ -1,0 +1,52 @@
+body {
+	background-color: #fbf2e9;
+	font-family: sans-serif;
+}
+.container {
+	margin: 0 auto;
+	width: 600px;
+}
+p {
+	text-align: right;
+	font-weight: bold;
+	font-size: 14px;
+}
+p a {
+	color: blue;
+}
+h2 {
+	font-size: 18px;
+	text-align: center;
+}
+form {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-column-gap: 40px;
+}
+label {
+	font-weight: bold;
+	font-size: 14px;
+}
+input {
+	box-sizing: border-box;
+	height: 25px;
+	width: 280px;
+	margin-bottom: 15px;
+}
+input:focus-visible, select:focus-visible{
+	outline: none;
+}
+select {
+	height: 25px;
+	width: 280px;
+}
+button {
+	grid-column: span 2;
+	height: 30px;
+}
+
+.error {
+   border: solid 2px red;
+   box-shadow: inset 1px 1px 2px red, inset -1px -1px 2px red;
+   border-radius: 3px;
+}
