@@ -43,5 +43,4 @@ function addInfo(obj){
 function showInfo(obj){
 	document.forms[0].name.value = obj.firstName;
 	document.forms[0].lastname.value = obj.lastName;
-
 }
