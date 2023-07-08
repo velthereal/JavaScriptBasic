@@ -106,8 +106,13 @@ link.addEventListener('click', (e) => {
 	if(!checkEmail(email.value)){
 		wrong[0].classList.add('wrong');
 		e.preventDefault();
+		return;
 	}
-
+	if(!checkPassword(password.value)){
+		wrong[1].classList.add('wrong');
+		e.preventDefault();
+		return;
+	}
 	if(checkUser(email.value, password.value)){
 		checkUser(email.value, password.value);
 	}
@@ -128,10 +133,14 @@ function checkEmail(email){
 	if(email.length == 0){
 		return false;
 	}
-	if(!/@/.test(email)){
+	if(!/(\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,6})/.test(email)){
 		return false;
 	}
 	return true;
+}
+function checkPassword(password) {
+	return /((?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,15})/.test(password);
+
 }
 function setCookie(email, password){
 	let date = new Date();
@@ -171,6 +180,6 @@ function checkUser(email, password){
 			return true;
 		}
 	}
-	document.cookie = `current=${users.length + 1}; expires=${date.toUTCString()}`;
+	document.cookie = `current=${users.length}; expires=${date.toUTCString()}`;
 	return false;
 }
